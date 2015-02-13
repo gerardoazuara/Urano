@@ -1,93 +1,80 @@
 body{
-	font-size: 1em;/*comentario*/
+	font-size: 1em;/* comentario */
 	font-family: Helvetica;
 }
 .container{
 	width: 90%;
 	margin: 0 5%;
 }
-/*Colores*/
+/* -- Colores -- */
 
 .header-container{
-border-bottom: 20px solid #E44d26; 
+	border-bottom: 20px solid #E44d26;
 }
-
-/**diferentes formas con el mismo estilo Selecciona todas alas etiquetas que esten dentro de tosdos los main y aparte todos los elementes de la clase putter coniiner*/
 
 .footer-container, .main aside{
-	border-top: 20px solid #E44d26; 
+	border-top: 20px solid #E44d26;
 }
-
 .header-container,
-.foot-container,
+.footer-container,
 .main aside{
 	background: #F16529;
 }
-
 .title{
 	color: white;
 }
 
-/*estilo telefono*/
+/* estilo telefono */
+
 nav ul{
-	margin: 0;/*quitar el margen a la lista*/
+	margin: 0;
 	padding: 0;
 }
 
 nav a{
-	display: block;		/*visibilidad del elemento*/
+	display: block;
 	margin-bottom: 10px;
-	padding: 15 px 0;
+	padding: 15px 0;
 	text-align: center;
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
 	background: #E44d26;
 }
-
-nav a:visited{/*Color del link cuando ya hemos visitado esa dirección*/
+nav a:visited{
 	color: white;
 }
-
 nav a:hover{
 	text-decoration: underline;
 }
-
-
-/*viernes 13 casual*/
-/*vamos a sobreeescribir...va respetar la ultima instruccion que le dí,
- pero cuando lo hacemos sobre el mismo selector y diferente elemento, entonces combina*/
 .main{
-	/*arriba abajo 30, y 0 a la derecha e izquierda*/
 	padding: 30px 0;
 }
-/*algo de anidado*/
 .main article h1{
-	font-size: 2em;
+	font-size: 2em;	
 }
 .main aside{
 	color:white;
 	padding: 0px 5%;
 }
-.footer-comtainer footer{
+
+.footer-container footer{
 	color: white;
 	padding: 20px 0;
 }
 
-/*clearfix es el nombre de la clase*/
-/*ni antes ni despues se ubican elementos*/
 .clearfix:before,
 .clearfix:after{
-	content: " "
+	content: " ";
 	display: table;
 }
 .clearfix:after{
 	clear: both;
 }
-
-/* estilo para pantallas mas anchas de 480px*/
+/*  estilo para pantallas más anchas que 480px 
+<meta name="viewport" content="width=device-width">
+  */
 @media only screen and (min-width: 480px){
-	/*todo el estilo dentro de esto va funcionar en pantallas mas grandes de 480 px*/
 	h1{
 		color: red;
 	}
@@ -105,8 +92,9 @@ nav a:hover{
 	nav li:last-child a{
 		margin-right: 0;
 	}
-
 	nav ul li{
 		display: inline;
 	}
-}/**viene de media only /
+
+
+}/* min-width: 480px */
