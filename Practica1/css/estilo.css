@@ -6,6 +6,17 @@ body{
 	width: 90%;
 	margin: 0 5%;
 }
+
+table{
+	width: 100%;
+	border: 1px solid black;
+
+}
+td,th{
+	border: 1px solid black;
+}
+
+
 /* -- Colores -- */
 
 .header-container{
@@ -96,5 +107,64 @@ nav a:hover{
 		display: inline;
 	}
 
+/*MI ESTILO A LA TABLA*/
+table{
+	width: 100%;
+	border: 3px solid green;
+
+}
+td,th{
+	border: 3px solid green;
+}
+/*MI ESTILO A LA TABLA*/
+
 
 }/* min-width: 480px */
+
+
+
+/*SEGUNDA RESOLUCIÓN*/
+/*  estilo para pantallas más anchas que 850px 
+<meta name="viewport" content="width=device-width">
+  */
+@media only screen and (min-width: 850px){
+	.header-container,
+	.main aside{
+		-moz-box-shadow: 0px 8px 14px #fada0d;
+		-webkit-box-shadow: 0px 8px 14px #fada0d;
+		box-shadow: 0px 8px 14px #fada0d;
+	}	
+
+	.title{
+		float: left;
+	}
+
+	nav {
+		float: right;
+		width: 38%;
+	}
+
+	.main article{
+		float: left;
+		width: 57%;
+	}
+
+	.main aside{
+		float:right;
+		width: 28%;
+	}
+
+/*MI ESTILO DE TABLA*/
+table{
+	width: 89%;
+	border: 3px solid yellow;
+	background: red;
+
+}
+td,th{
+	border: 3px solid yellow;
+	background: blue;
+}
+/*MI ESTILO DE TABLA*/
+
+}/* min-width: 850px */
