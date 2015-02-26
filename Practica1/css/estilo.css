@@ -163,8 +163,13 @@ table{
 }
 td,th{
 	border: 3px solid yellow;
-	background: blue;
+	background: solid blue;
+
+	/*LIBRERIAS COMUNITARIAS*/
+	/*HTTP://NECOLAS.GITHUB.IO/NORMALIZE.CSS/*/
+	/*LIBRERIAS COMUNITARIAS*/
 }
 /*MI ESTILO DE TABLA*/
 
 }/* min-width: 850px */
+

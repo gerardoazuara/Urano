@@ -1,0 +1,5 @@
+.container{
+	/* las imagenes se buscan desde la carpeta css, por eso la ruta es relativa */
+	background-image: url("../img/008.png");
+	background: url("../img/003.png");
+}
