@@ -1,0 +1,6 @@
+.container{
+	/* las imagenes se buscan desde la carpeta css, por eso la ruta es relativa */
+	background-image: url("../img/rainbow2.jpg");
+	/*background: url("../img/violet.png");*/
+	
+}

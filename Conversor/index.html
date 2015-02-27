@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mis Convertidores :D</title>
+     <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- PARA VINCULAR UN ESTILO EN CASCADA EN DONDE AGREGAMOS IMAGENES -->
+    <link rel="stylesheet" type"text/css" href="css/miestilo.css">
+
+    <!--<style type="text/css">
+        div{
+            border: 1px solid black;
+        }   
+    </style>-->
+
+    <script type="text/javascript">
+       // alert("Hola Mundo");
+        /* comentario */
+        //var operador1 = 4;
+        //var operador2 = 6;
+
+        //alert(operador1);
+        //alert(operador2);
+
+        function calcula(operacion){
+            var operador1 = document.calculadora.operador1.value;       //obtener el valor de una caja de texto por medio de name
+            var operador2 = document.getElementById("operador2").value; //Obtener el valor de una caja de texto por medio del id
+            alert(operador1);
+            alert(operador2);
+            var result= eval(operador1 + operacion + operador2);        //para evaluar una expresion matematica
+            document.calculadora.resultado.value= result;
+        }
+
+        function convertirMt(operacion){
+            var v_constante = 1.0936133;
+            var v_cantMetros= document.getElementById("cantMetros").value;
+            var result= eval(v_cantMetros + operacion + v_constante);    //para evaluar una expresion matematica
+            document.frm_metros_yardas.resultado.value= result;
+        }
+        function convertirKg(operacion){
+            var v_constante = 2.20462262;
+            var v_cantKg= document.getElementById("cantKg").value;
+            var result= eval(v_cantKg + operacion + v_constante);       //para evaluar una expresion matematica
+            document.frm_kg_libras.resultado.value= result;
+        }
+
+        function convertirLt(operacion){
+            var v_constante = 0.264172051;
+            var v_cantKg= document.getElementById("cantLitros").value;
+            var result= eval(v_cantKg + operacion + v_constante);       //para evaluar una expresion matematica
+            document.frm_lt_galon.resultado.value= result;
+        }
+    </script>
+
+</head>
+<h1>Hello, world! My name is Gera</h1>
+
+    
+<body>
+    <div class="container text-center">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <form name="calculadora">
+
+                    <label for="operador1">Operador 1</label>
+                    <input type="number" value="9" name ="operador1" id="operador1" class="form-control text-center"><!--clases de bootstrap-->
+
+                    <label for="operador2">Operador 2</label>
+                    <input type="text" value="2" name ="operador2" id="operador2" class="form-control text-center">
+
+
+                    <input type="button" value=" + " class="btn btn-success" onclick="calcula('+')">
+                    <input type="button" value=" - " class="btn btn-primary">
+                    <input type="button" value=" x " class="btn btn-danger">
+                    <input type="button" value=" / " class="btn btn-warning">
+
+                    <input type="number" value="" name="resultado" placeholder="Resultado "class="form-control text-center">
+                </form>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1> CONVERSORES  </h1>
+            </div>
+        </div>
+        
+        <div class="row"><!--INICIO DEL RENGLON-->
+
+            <div class="col-md-4">
+                <!--CONVERSOR COLUMNA IZQUIERDA-->
+                <form name="frm_metros_yardas">
+                    <label for="cantMetros">Metros</label>
+                    <input type="text" value="0" name ="cantMetros" id="cantMetros" class="form-control text-center">
+
+                    <input type="button" value="Convertir" class="btn btn-info" onclick="convertirMt('*')">
+                    <br>
+                    <label for="resultado">Yardas</label>
+                    <input type="number" value="" name="resultado" placeholder="Resultado "class="form-control text-center" disabled>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                 <!--CONVERSOR COLUMNA CENTRAL-->
+                <form name="frm_kg_libras">
+                    <label for="cantMetros">Kilogramos</label>
+                    <input type="text" value="0" name ="cantKg" id="cantKg" class="form-control text-center">
+
+                    <input type="button" value="Convertir" class="btn btn-info" onclick="convertirKg('*')">
+                    <br>
+                    <label for="resultado">Libras</label>
+                    <input type="number" value="" name="resultado" placeholder="Resultado "class="form-control text-center" disabled>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <!--CONVERSOR COLUMNA DERECHA-->
+                <form name="frm_lt_galon">
+                    <label for="cantLitros">Litros</label>
+                    <input type="text" value="0" name ="cantLitros" id="cantLitros" class="form-control text-center">
+
+                    <input type="button" value="Convertir" class="btn btn-info" onclick="convertirLt('*')">
+                    <br>
+                    <label for="resultado">Galones</label>
+                     <input type="number" value="" name="resultado" placeholder="Resultado "class="form-control text-center" disabled>
+                </form>
+            </div>
+
+        </div><!--FINAL DEL RENGLON-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>   </h1>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</body>
+</body>
+</html>
