@@ -17,25 +17,9 @@
         }   
     </style>-->
 
-    <script type="text/javascript">
-       // alert("Hola Mundo");
-        /* comentario */
-        //var operador1 = 4;
-        //var operador2 = 6;
+    <!--quitamos la etiqueta script, y el contenido de la misma se pasa a  funciones.js-->
 
-        //alert(operador1);
-        //alert(operador2);
-
-        function calcula(operacion){
-            var operador1 = document.calculadora.operador1.value;//obtener el valor de una caja de texto por medio de name
-            var operador2 = document.getElementById("operador2").value;//Obtener el valor de una caja de texto por medio del id
-            alert(operador1);
-            alert(operador2);
-            var result= eval(operador1 + operacion + operador2);//para evaluar una expresion matematica
-            document.calculadora.resultado.value= result;
-        }
-
-    </script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 
 </head>
 <h1>Hello, world! My name is Gera</h1>
@@ -48,7 +32,7 @@
             <div class="col-md-6">
                 <form name="calculadora">
 
-                    <label for="operador1">Operador 1</label>
+                    <label for="operador1" >Operador 1</label>
                     <input type="number" value="9" name ="operador1" id="operador1" class="form-control text-center"><!--clases de bootstrap-->
 
                     <label for="operador2">Operador 2</label>

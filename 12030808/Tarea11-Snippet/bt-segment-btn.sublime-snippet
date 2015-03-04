@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+ ${1:this} is a ${2:snippet}.
+<div class="input-group">
+  <div class="input-group-btn" name="${1:this}" id="${1:this}">
+    <!-- Button and dropdown menu -->
+  </div>
+  <input type="text" class="form-control" aria-label="...">
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bt-segment-btn</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

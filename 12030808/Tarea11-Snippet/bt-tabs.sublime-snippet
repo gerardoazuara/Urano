@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+ ${1:this} is a ${2:snippet}.
+<ul class="nav nav-tabs" name=" ${1:this}" id=" ${1:this}">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bt-tabs</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

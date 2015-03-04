@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+ ${1:this} is a ${2:snippet}.
+           <div class="btn-toolbar" role="toolbar" aria-label="..." name="${1:this}" id="${1:this}">
+  <div class="btn-group" role="group" aria-label="...">...</div>
+  <div class="btn-group" role="group" aria-label="...">...</div>
+  <div class="btn-group" role="group" aria-label="...">...</div>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+ <tabTrigger>bt-btn-toolbar</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
