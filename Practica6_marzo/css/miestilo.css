@@ -1,0 +1,36 @@
+.container{
+	/* las imagenes se buscan desde la carpeta css, por eso la ruta es relativa */
+	background-image: url("../img/green.jpg")
+}
+
+body{
+	background-image: url("../img/dinero.jpg")
+}
+
+h1{
+	text-shadow: 0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de
+}
+
+img{
+    height: 180px;
+    width: 180px;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+ 
+img:hover {
+    height: 200px;
+    width: 200px;
+    margin-left: -10px;
+}
+
+
+
+
+
+
